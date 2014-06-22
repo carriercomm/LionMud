@@ -1,0 +1,11 @@
+{
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-ui-ace": "bower",
+    "jquery": "~2.1.1",
+    "pdfjs": "~1.0.277",
+    "splitter": "*",
+    "ng-pdfviewer": "~0.2.1"
+  }
+}

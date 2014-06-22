@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="Laytech">
+  <head>
+    <meta charset="utf-8">
+    <title>Laytech</title>    
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body ng-controller="AppController as appcontroller">
+  <div ui-ace="
+    {
+      useWrapMode : true,
+      showGutter: false,
+      theme:'twilight',
+      mode: 'latex',
+      onLoad: aceLoaded,
+      onChange: aceChanged
+    }
+    "></div>
+
+    We are using node.js <script>document.write(process.version)</script>
+
+    <iframe src="js/bower_components/pdfjs/web/viewer.html" frameborder="0"></iframe>
+    
+    <script type="text/javascript" src="js/bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+    <script type="text/javascript" src="js/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="js/bower_components/angular-ui-ace/ui-ace.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

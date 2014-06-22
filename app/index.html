@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="Laytech">
+  <head>
+    <meta charset="utf-8">
+    <title>Laytech</title>    
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body ng-controller="AppController as appcontroller">
+
+    <div splitter>
+  
+      <div ui-ace="{
+        useWrapMode : true,
+        showGutter: false,
+        theme:'twilight',
+        mode: 'latex',
+        onLoad: aceLoaded,
+        onChange: aceChanged
+      }"></div>
+
+      <pdfviewer src="test.pdf" on-page-load='pageLoaded(page,total)' id="viewer"></pdfviewer>
+
+
+
+       and pdf.compat.js.
+
+      Declare ngPDFViewer as dependency to your module.
+
+      You can now use the pdfviewer tag in your HTML source.
+
+
+    We are using node.js <script>document.write(process.version)</script>
+    
+    <script type="text/javascript" src="js/bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+    <script type="text/javascript" src="js/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="js/bower_components/angular-ui-ace/ui-ace.js"></script>
+    <script type="text/javascript" src="js/bower_components/ng-pdfviewer/ng-pdfviewer.js"></script>
+    <script type="text/javascript" src="js/bower_components/lib/pdf.js"></script>
+
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
